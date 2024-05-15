@@ -14,7 +14,7 @@ export async function POST(request:NextRequest ){
 
         if ( !email || !password) {
             return NextResponse.json(
-                {error: 'Please Fill All Fields'},
+                {error: 'Please Fill All  Fields'},
                 {status:400});
         }            
         const user = await User.findOne({
